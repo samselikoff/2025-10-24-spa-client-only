@@ -16,11 +16,17 @@ export default function Sidebar() {
   });
 
   return (
-    <nav className="w-40 bg-gray-200 p-2 min-h-dvh flex flex-col">
-      <Link href="/">Home</Link>
+    <nav className="w-40 bg-gray-100 min-h-dvh flex flex-col">
+      <Link className="px-4 py-2 hover:bg-gray-200" href="/">
+        Home
+      </Link>
 
       {data?.map((chat) => (
-        <Link href={`/chat/${chat.id}`} key={chat.id}>
+        <Link
+          className="px-4 py-2 hover:bg-gray-200"
+          href={`/chat/${chat.id}`}
+          key={chat.id}
+        >
           {chat.title}
         </Link>
       ))}
