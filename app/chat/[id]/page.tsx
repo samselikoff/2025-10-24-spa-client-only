@@ -26,7 +26,7 @@ function Content() {
   });
 
   return (
-    <div className="m-2">
+    <div>
       {isPending ? (
         <p>Loading..</p>
       ) : error ? (

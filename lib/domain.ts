@@ -1,6 +1,6 @@
 export const domain =
   process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-    ? 'https://www.foo.app'
+    ? 'https://2025-10-24-spa-client-only.vercel.app/'
     : process.env.VERCEL_BRANCH_URL
     ? `https://${process.env.VERCEL_BRANCH_URL}`
     : process.env.NEXT_PUBLIC_VERCEL_URL

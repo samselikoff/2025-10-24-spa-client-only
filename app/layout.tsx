@@ -32,7 +32,7 @@ export default function RootLayout({
         <Provider>
           <Sidebar />
 
-          <main>{children}</main>
+          <main className="m-2">{children}</main>
         </Provider>
       </body>
     </html>
